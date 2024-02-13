@@ -39,7 +39,7 @@ console.log(typeof null); //output: object
 console.log(typeof Object); //output: function
 
 let x;
-console.log(x); //output: undefined
+console.log(x); //output: undefined 
 
 function dosomething(){
     // return no value , output shows undefined type
