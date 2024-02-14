@@ -3,7 +3,7 @@ let score = "33"
 // let score = null note:it  represents the absence of an object value
 // let score = ""
 // let score = true
-console.log(typeof score);
+console.log(typeof score); 
 console.log(typeof (score));
 let value = 123
 let a = BigInt(value)
