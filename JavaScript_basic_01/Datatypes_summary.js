@@ -70,3 +70,50 @@ JavaScript's dynamic typing allows for more flexibility but can lead to potentia
 Static typing, on the other hand, provides better type safety at the cost of some initial verbosity and strictness.
 
 */
+// Primitive datatype examples
+const store = 100
+const stored = 100.2
+const isloggedIn = false
+
+let id = Symbol('123')
+let anotherId = Symbol('123')
+
+console.log(id == anotherId)
+console.log(id === anotherId)
+console.log(typeof anotherId);
+
+//Non-Primitive datatype examples. 
+
+//array are create by declaring the varaible and assign the values in [] large bracses. for example
+const student = ["haseeb", "ali", "abbas"];
+
+console.log(student);
+// objects are creates with curly bracses {} and assign to declaring the object name. for example
+
+let myObj = {
+ 
+   name: "haseeb",
+   age: 21,
+
+
+}
+console.log(myObj.name, myObj.age);
+
+// function are creates with function (){}, for example.
+
+const myfunction = function(){
+   console.log("I'm haseeb!");
+}
+// calling the function...
+myfunction();
+
+// another example of function
+
+let person = function (){
+
+   Name= "haseeb"
+    Age = 21
+    
+   }
+   // calling function...
+   person();
