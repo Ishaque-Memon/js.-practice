@@ -117,3 +117,37 @@ let person = function (){
    }
    // calling function...
    person();
+// **********************************Memory Management******************************
+
+   // As a programmer we have responsiblity to free the memory or reserve the memory
+
+//While memory management differs from programming language, they share common concepts such as Stack, Heap, etc.
+// More common concepts are stack, and heap.
+
+//Stack used in Primitive data types.
+//Heap used in Non-Primitive data types.
+// note: heap never gives copy a reference always gives orginal reference.
+
+// stack and heap example 
+
+let firstname = "Muhammad Ishaque";
+let nickName = firstname;
+nickName = "Abdul Haseeb";
+
+console.log(firstname);
+console.log(nickName);
+
+let userOne = {
+   email: "haseeb@gmail.com",
+   pass: "\nhelloG123"
+}
+
+let userTwo = userOne
+
+userTwo.email = "ishaq123@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// Note: Stack gives a copy value of primitive datatype such as(boolean, number, bigint, symbol)..
+// Heap gives a orginal reference of non-primitive such as(array, objects, functions)
