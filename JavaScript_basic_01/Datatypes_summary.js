@@ -78,34 +78,34 @@ const isloggedIn = false
 let id = Symbol('123')
 let anotherId = Symbol('123')
 
-console.log(id == anotherId)
-console.log(id === anotherId)
-console.log(typeof anotherId);
+console.log(id == anotherId);  //output: true
+console.log(id === anotherId); //strickly checked by === equals output: false
+console.log(typeof anotherId); //output: symbol
 
 //Non-Primitive datatype examples. 
 
-//array are create by declaring the varaible and assign the values in [] large bracses. for example
+//array are create by declaring the varaible and assign the values in the large braceses []. for example
 const student = ["haseeb", "ali", "abbas"];
 
 console.log(student);
-// objects are creates with curly bracses {} and assign to declaring the object name. for example
 
+// objects are creates with curly bracses {} and assign to declaring the object name. for example
 let myObj = {
  
    name: "haseeb",
    age: 21,
 
-
 }
+
 console.log(myObj.name, myObj.age);
 
-// function are creates with function (){}, for example.
+// function are creates with function (){}, for example, function call by function name.
 
-const myfunction = function(){
+const myfunction = function(){ //function() creates function, and  myfunction is a function.
    console.log("I'm haseeb!");
 }
-// calling the function...
-myfunction();
+// calling the function with the function name...
+myfunction(); 
 
 // another example of function
 
@@ -126,16 +126,18 @@ let person = function (){
 
 //Stack used in Primitive data types.
 //Heap used in Non-Primitive data types.
-// note: heap never gives copy a reference always gives orginal reference.
+// note: heap never gives a copy of reference value, always gives orginal reference.
 
 // stack and heap example 
 
 let firstname = "Muhammad Ishaque";
-let nickName = firstname;
-nickName = "Abdul Haseeb";
+let nickName = firstname; //firstname value assigning to nickName
+nickName = "Abdul Haseeb"; //changing the nickName value 
 
-console.log(firstname);
-console.log(nickName);
+console.log(firstname); //it prints Muhammad Ishaque
+console.log(nickName); // it prints Abdul Haseeb
+//conslusion: The reason behind in this logic is, that first assigning the value of firstname to nickName and replacing the value to instead of firstname value..
+//but in memory it creates first, a copy of firstname for nickName and after replacing the nickName with new value instead of it, memory will be updated in stack and place the nickName in the stack memory with new value.
 
 let userOne = {
    email: "haseeb@gmail.com",
